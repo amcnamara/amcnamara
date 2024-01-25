@@ -1,0 +1,203 @@
+\documentclass[12pt]{article}
+
+\pagestyle{empty}
+\setlength{\hoffset}{0in}
+\setlength{\voffset}{0in}
+\setlength{\topmargin}{-1in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\evensidemargin}{-0.25in}
+\setlength{\textwidth}{7in}
+\setlength{\textheight}{10in}
+
+\usepackage{color}
+\definecolor{hyperlink}{rgb}{0.0,0.2,0.4}
+\usepackage[colorlinks=true, urlcolor=hyperlink]{hyperref}
+
+\usepackage{enumitem}
+\setitemize{noitemsep,topsep=0in}
+
+\newenvironment{justifycolumns}
+{\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lr@{}}}
+{\end{tabular*}}
+
+\newcommand{\row}[2]{#1 & #2 \\}
+\newcommand{\rowheading}[2]{\row{\textbf{#1}}{\textbf{#2}}}
+
+\newcommand{\range}[2]{#1 -- #2}
+
+\newcommand{\blockseparation}{\vspace{0.15in}}
+
+\newcommand{\heading}[1]{
+	\blockseparation
+	\uppercase{#1}
+	\vspace{0.05in}
+	\hrule
+	\blockseparation
+}
+
+\newenvironment{tightbullets}
+{\begin{itemize}}
+{\end{itemize}}
+
+%unfortunately enumitem doesn't provide a bottomsep override
+\newenvironment{bullets}
+{\begin{tightbullets}}
+{\end{tightbullets} \blockseparation}
+
+\begin{document}
+\begin{flushleft}
+
+\begin{justifycolumns}
+	\row{\Large\textbf{Alex McNamara}}{939-B Chapman Blvd}
+	\row{510-738-7344}{Ottawa, ON, Canada}
+	\row{
+		\href{mailto:alex.mcnamara@gmail.com}{alex.mcnamara@gmail.com} / github: 
+		\href{http://www.github.com/amcnamara}{amcnamara}
+	}{K1G1V4}
+\end{justifycolumns}
+
+\blockseparation
+
+
+\heading{Areas of Expertise}
+
+\begin{bullets}
+	\item Full-stack software engineer with extensive work experience in:
+	
+	\begin{tightbullets}
+		\item Languages: Java, Javascript, Ruby, and Clojure.
+		\item Client frameworks: React, Angular.
+		\item Backend frameworks: Spring, Rails.
+		\item Databases: MySQL, DynamoDB, and Reddis.
+		\item Infrastructure: Terraform, Consul, Vagrant, and Kubernetes; on AWS and Azure.
+		\item Cloud services: S3, SQS/SNS, SWF, Lambda, VPC, and IAM.
+	\end{tightbullets}
+
+	\item Experienced software architect and technical lead, able to coordinate across multiple teams.
+	\item Demonstrated ability to deliver work independently and laterally across organizations.
+\end{bullets}
+
+
+\heading{Major Projects}
+
+\begin{bullets}
+	\item Lead engineer on \href{http://apps.microsoft.com/windows/en-us/app/amazon/80299018-3dee-418d-8466-374fe9463309}{Amazon for Windows} desktop-integrated retail application.
+	\item Designed identity and access management systems for the \href{https://www.amazon.com/b?ie=UTF8\&node=16008589011}{Amazon Go} grocery store.
+	\item Founded a startup to create a Git-integrated project management SaaS suite.
+	\item Created an early smartphone CMS and ad delivery platform, serving over 6 million users.
+\end{bullets}
+
+
+\heading{Work Experience}
+
+\begin{justifycolumns}
+	\rowheading{Sabbatical}{\range{2017}{2019}}
+	\row{\emph{Personal, Ottawa}}{}
+\end{justifycolumns}
+\begin{bullets}
+	\item Spent time with a family member who was undergoing medical treatment.
+\end{bullets}
+
+\begin{justifycolumns}
+	\rowheading{Principal Software Engineer}{\range{2015}{2017}}
+	\row{\emph{Outreach, Seattle}}{}
+\end{justifycolumns}
+\begin{bullets}
+	\item Responsible for overhauling MVP system architecture to improve scalability and security.
+	\item Refactored monolith backend into identity and backward-compatible API micro-services.
+	\item Incorporated OAuth and upstream directory integration to enable SSO and 3P API access.
+	\item Technical advisor on SOC2 certification process, overseen by the Chief Infosec Officer.
+	\item Profiled the \href{https://chrome.google.com/webstore/detail/outreach-everywhere/chmpifjjfpeodjljjadlobceoiflhdid}{Everywhere} plugin, improving render performance by 20\% with minor changes.
+\end{bullets}
+
+\begin{justifycolumns}
+	\rowheading{Software Development Engineer}{\range{2012}{2015}}
+	\row{\emph{Amazon, Seattle}}{}
+\end{justifycolumns}
+\begin{bullets}
+	\item Lead engineer on the \href{http://apps.microsoft.com/windows/en-us/app/amazon/80299018-3dee-418d-8466-374fe9463309}{Amazon for Windows} retail application, launched with Windows 8.
+	\item Designed an SPA framework specifically to manage and coordinate sandboxed web assets.
+	\item Extended Amazon’s Cordova-like mobile event bus to support a richer navigation model.
+	\item Created a fully responsive UI, which adhered to the Metro design language spec exactly.
+	\item Ensured that Amazon for Windows was Amazon's first fully-HTTPS retail experience.
+	\item Designed customer identity management and entry/exit workflow for \href{https://www.amazon.com/b?ie=UTF8\&node=16008589011}{Amazon Go}.
+	\item Prototyped early iterations of all screen experiences in Amazon Go for executive leadership.
+	\item Implemented real-time cart inventory tracking experience for the Amazon Go mobile app.
+	\item Technical advisor on \href{https://www.amazon.com/amazon-books-university-village-seattle-washington/b?ie=UTF8\&node=17750359011}{Amazon Books} inventory management and checkout systems.
+\end{bullets}
+
+\pagebreak
+
+\begin{justifycolumns}
+	\rowheading{Software Engineer, Founder}{\range{2010}{2012}}
+	\row{\emph{Dreamux, Montreal}}{}
+\end{justifycolumns}
+\begin{bullets}
+	\item Built a project management SaaS suite, for small to mid-sized software development firms.
+	\item Wrote and open-sourced \href{https://github.com/amcnamara/slurm}{Slurm}, an experimental SQL ORM built in Clojure.
+\end{bullets}
+
+\begin{justifycolumns}
+	\rowheading{Client Manager}{\range{2009}{2009}}
+	\row{\emph{Web Impact, Toronto}}{}
+\end{justifycolumns}
+\begin{bullets}
+	\item Managed a small team of developers, coordinating resources for feature/support requests.
+	\item Worked with customers on contract specs, and implemented initial prototypes as needed.
+	\item Oversaw support request triage, and communicated progress with customers.
+\end{bullets}
+
+\begin{justifycolumns}
+	\rowheading{Lead Software Developer}{\range{2007}{2008}}
+	\row{\emph{Polar Mobile, Toronto}}{}
+\end{justifycolumns}
+\begin{bullets}
+	\item Created a mobile-focused advertising and analytics platform, serving over 6M users.
+	\item Normalized data acess layer, reducing query volume and infrastructure costs by 50\%.
+	\item Wrote monitoring and deployment shell scripts to improve service uptime.
+\end{bullets}
+
+\begin{justifycolumns}
+	\rowheading{Software Developer, Contractor}{\range{2006}{2006}}
+	\row{\emph{Nortel, Belleville}}{}
+\end{justifycolumns}
+\begin{bullets}
+	\item Embedded a provisioning web server into the experimental SIP firmware of the 1140E phone.
+	\item Analyzed Cisco, Avaya, and Mitel hardware for cost-reduction and competitive analysis.
+\end{bullets}
+
+
+\heading{Education}
+
+\begin{justifycolumns}
+	\rowheading{B.A.Sc. Software Engineering, with Honors}{}
+	\row{University of Ottawa}{}
+\end{justifycolumns}
+
+\blockseparation
+
+
+\heading{Research and Patents}
+
+\begin{justifycolumns}
+	\row{Dynamic inventory management user interface}
+	{\href{http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1\&Sect2=HITOFF\&d=PALL\&p=1\&u=\%2Fnetahtml\%2FPTO\%2Fsrchnum.htm\&r=1\&f=G\&l=50\&s1=10,303,187.PN.\&OS=PN/10,303,187\&RS=PN/10,303,187}{10,303,187}}
+   	\row{Augmented reality enhanced interaction system}
+   	{\href{http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1\&Sect2=HITOFF\&d=PALL\&p=1\&u=\%2Fnetahtml\%2FPTO\%2Fsrchnum.htm\&r=1\&f=G\&l=50\&s1=10,282,696.PN.\&OS=PN/10,282,696\&RS=PN/10,282,696}{10,282,696}}
+	\row{Color adaptable inventory management user interface}
+	{\href{http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1\&Sect2=HITOFF\&d=PALL\&p=1\&u=\%2Fnetahtml\%2FPTO\%2Fsrchnum.htm\&r=1\&f=G\&l=50\&s1=10,282,695.PN.\&OS=PN/10,282,695\&RS=PN/10,282,695}{10,282,695}}
+	\row{Hybrid native networked applications}
+	{\href{http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1\&Sect2=HITOFF\&d=PALL\&p=1\&u=\%2Fnetahtml\%2FPTO\%2Fsrchnum.htm\&r=1\&f=G\&l=50\&s1=9,349,123.PN.\&OS=PN/9,349,123\&RS=PN/9,349,123}{9,349,123} and \href{http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1\&Sect2=HITOFF\&d=PALL\&p=1\&u=\%2Fnetahtml\%2FPTO\%2Fsrchnum.htm\&r=1\&f=G\&l=50\&s1=9,503,551.PN.\&OS=PN/9,503,551\&RS=PN/9,503,551}{9,503,551}}
+\end{justifycolumns}
+
+\blockseparation
+
+I am the lead author on 16 patents which remain pending with the \href{http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2\&Sect2=HITOFF\&p=1\&u=\%2Fnetahtml\%2FPTO\%2Fsearch-bool.html\&r=0\&f=S\&l=50\&TERM1=McNamara\%2C+Alexander+Michael\&FIELD1=INNM\&co1=AND\&TERM2=\&FIELD2=\&d=PTXT}{USPTO}, relating to research in:
+\begin{bullets}
+	\item Sensor fusion.
+	\item Object detection and classification.
+	\item Physical user interation.
+\end{bullets}
+
+\end{flushleft}
+\end{document}
