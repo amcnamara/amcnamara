@@ -7,7 +7,7 @@
 \usepackage[portrait, margin=0.85in]{geometry}
 
 \usepackage{color}
-\definecolor{hyperlink}{rgb}{0.0,0.2,0.4}
+\definecolor{hyperlink}{rgb}{0.0,0.2,0.9}
 \usepackage[colorlinks=true, urlcolor=hyperlink]{hyperref}
 
 \usepackage{enumitem}
@@ -22,10 +22,10 @@
 
 \newcommand{\range}[2]{#1 -- #2}
 
-\newcommand{\blockseparation}{\vspace{0.15in}}
+\newcommand{\blockseparation}{\vspace{0.13in}}
 
 \newcommand{\heading}[1]{
-	\blockseparation
+	\vspace{0.05in}
 	\uppercase{#1}
 	\vspace{0.05in}
 	\hrule
@@ -35,6 +35,8 @@
 \newenvironment{tightbullets}
 {\begin{itemize}}
 {\end{itemize}}
+
+\renewcommand{\labelitemii}{$\circ$}
 
 %unfortunately enumitem doesn't provide a bottomsep override
 \newenvironment{bullets}
@@ -52,15 +54,11 @@
 		\href{http://www.github.com/amcnamara}{amcnamara}
 	}{93933}
 \end{justifycolumns}
-
-\blockseparation
-
+\vspace{0.175in}
 
 \heading{Background}
-
 \begin{bullets}
 	\item Demonstrated executive leadership, with a broad set of professional accomplishments:
-
 	\begin{tightbullets}
 		\item Led engineering organization through substantial restructuring.
 		\item 60+\% reduction in cloud opex, improving runway and incremental SaaS margins.
@@ -68,7 +66,6 @@
 	\end{tightbullets}
 
 	\item Strong written and verbal communication skills:
-
 	\begin{tightbullets}
 		\item Edited various board and marketing collateral for technical accuracy and clarity.
 		\item Ran regular all-hands to coordinate strategy across engineering, product, and sales.
@@ -76,7 +73,6 @@
 	\end{tightbullets}
 
 	\item Strategic planning informed by deep techical expertise:
-
 	\begin{tightbullets}
 		\item 10+ years of experience as a lead engineer, with products serving millions of users.
 		\item 6+ years implementing applied ML/AI (CV, sensor fusion, NLU, classification...)
@@ -84,9 +80,53 @@
 	\end{tightbullets}
 \end{bullets}
 
-WIP
+
+\heading{Major Projects}
+\begin{bullets}
+	\item Chief software architect on industry-first AI-powered PTT communication platform.
+	\item Early-stage principal engineer at a sales-automation startup, now valued at 4.4B\$.
+	\item Lead engineer on Amazon for Windows desktop-integrated retail application (Windows 8).
+	\item Designed identity and access management systems for the \href{https://www.amazon.com/b?ie=UTF8\&node=16008589011}{Amazon Go} grocery store.
+	\item Founded a startup to create a Git-integrated project management SaaS suite.
+	\item Created an early smartphone CMS and ad delivery platform, which served 6M users.
+\end{bullets}
+
+
+\heading{Areas of Expertise}
+\vspace{0.075in}
+\hspace{0.175in}
+Full-stack engineering background with extensive production experience in:
+\vspace{0.1in}
+\begin{bullets}
+	\item Infrastructure: Terraform, Docker, and Kubernetes; on AWS, GCP, and Azure.
+	\item Cloud services: EC2, S3, SQS/SNS, R53, Lambda, VPC, and IAM.
+	\item Databases: Postgres, DynamoDB, and Reddis.
+	\item Languages: Python, Javascript, GoLang, Ruby, Java, and Clojure.
+	\item Client frameworks: React, Angular.
+	\item Backend frameworks: Spring, Rails.
+\end{bullets}
+
+
+\heading{Research and Patents}
+\vspace{0.075in}
+\hspace{0.175in}
+Lead author on 17 patents granted by the \href{https://patents.google.com/?inventor=McNamara+Alexander+Michael}{USPTO}, relating to research in:
+\vspace{0.1in}
+\begin{bullets}
+	\item Sensor fusion.
+	\item Object detection and classification.
+	\item Physical user interation.
+	\item Hybrid-native mobile applications.
+\end{bullets}
 
 \pagebreak
+
+\heading{Education}
+
+\begin{justifycolumns}
+	\row{B.A.Sc. Software Engineering, with Honors}{}
+	\row{University of Ottawa}{}
+\end{justifycolumns}
 
 \heading{Areas of Expertise}
 
@@ -104,16 +144,6 @@ WIP
 
 	\item Experienced software architect and tech lead, able to coordinate across multiple teams.
 	\item Demonstrated ability to deliver work independently and laterally across organizations.
-\end{bullets}
-
-
-\heading{Major Projects}
-
-\begin{bullets}
-	\item Lead engineer on \href{http://apps.microsoft.com/windows/en-us/app/amazon/80299018-3dee-418d-8466-374fe9463309}{Amazon for Windows} desktop-integrated retail application.
-	\item Designed identity and access management systems for the \href{https://www.amazon.com/b?ie=UTF8\&node=16008589011}{Amazon Go} grocery store.
-	\item Founded a startup to create a Git-integrated project management SaaS suite.
-	\item Created an early smartphone CMS and ad delivery platform, serving over 6 million users.
 \end{bullets}
 
 
@@ -195,38 +225,9 @@ WIP
 	\item Analyzed Cisco, Avaya, and Mitel hardware for cost-reduction and competitive analysis.
 \end{bullets}
 
-
-\heading{Education}
-
-\begin{justifycolumns}
-	\rowheading{B.A.Sc. Software Engineering, with Honors}{}
-	\row{University of Ottawa}{}
-\end{justifycolumns}
-
 \blockseparation
 
 
-\heading{Research and Patents}
-
-\begin{justifycolumns}
-	\row{Dynamic inventory management user interface}
-	{\href{http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1\&Sect2=HITOFF\&d=PALL\&p=1\&u=\%2Fnetahtml\%2FPTO\%2Fsrchnum.htm\&r=1\&f=G\&l=50\&s1=10,303,187.PN.\&OS=PN/10,303,187\&RS=PN/10,303,187}{10,303,187}}
-   	\row{Augmented reality enhanced interaction system}
-   	{\href{http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1\&Sect2=HITOFF\&d=PALL\&p=1\&u=\%2Fnetahtml\%2FPTO\%2Fsrchnum.htm\&r=1\&f=G\&l=50\&s1=10,282,696.PN.\&OS=PN/10,282,696\&RS=PN/10,282,696}{10,282,696}}
-	\row{Color adaptable inventory management user interface}
-	{\href{http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1\&Sect2=HITOFF\&d=PALL\&p=1\&u=\%2Fnetahtml\%2FPTO\%2Fsrchnum.htm\&r=1\&f=G\&l=50\&s1=10,282,695.PN.\&OS=PN/10,282,695\&RS=PN/10,282,695}{10,282,695}}
-	\row{Hybrid native networked applications}
-	{\href{http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1\&Sect2=HITOFF\&d=PALL\&p=1\&u=\%2Fnetahtml\%2FPTO\%2Fsrchnum.htm\&r=1\&f=G\&l=50\&s1=9,349,123.PN.\&OS=PN/9,349,123\&RS=PN/9,349,123}{9,349,123} and \href{http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1\&Sect2=HITOFF\&d=PALL\&p=1\&u=\%2Fnetahtml\%2FPTO\%2Fsrchnum.htm\&r=1\&f=G\&l=50\&s1=9,503,551.PN.\&OS=PN/9,503,551\&RS=PN/9,503,551}{9,503,551}}
-\end{justifycolumns}
-
-\blockseparation
-
-I am the lead author on 16 patents which remain pending with the \href{http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2\&Sect2=HITOFF\&p=1\&u=\%2Fnetahtml\%2FPTO\%2Fsearch-bool.html\&r=0\&f=S\&l=50\&TERM1=McNamara\%2C+Alexander+Michael\&FIELD1=INNM\&co1=AND\&TERM2=\&FIELD2=\&d=PTXT}{USPTO}, relating to research in:
-\begin{bullets}
-	\item Sensor fusion.
-	\item Object detection and classification.
-	\item Physical user interation.
-\end{bullets}
 
 \end{flushleft}
 \end{document}
