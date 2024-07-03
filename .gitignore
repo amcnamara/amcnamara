@@ -1,6 +1,7 @@
-.DS_STORE
-README.md.bu
-artifacts/*.log
-artifacts/*.aux
-artifacts/*.out
-cover-letter/
+.DS_Store
+*.aux
+*.log
+*.out
+*.synctex.gz
+cover-letter/*
+/amcnamara_cv.pdf
