@@ -4,4 +4,6 @@
 *.out
 *.synctex.gz
 cover-letter/*
-/amcnamara_cv.pdf
+!cover-letter/build.sh
+!cover-letter/amcnamara_cover_letter.tex
+!cover-letter/graphics/logo.svg
