@@ -1,0 +1,59 @@
+\documentclass[12pt]{article}
+
+\pagestyle{empty}
+\setlength{\hoffset}{0in}
+\setlength{\voffset}{0in}
+
+\usepackage[portrait, margin=1.25in]{geometry}
+
+\usepackage{color}
+\definecolor{hyperlink}{rgb}{0.0,0.2,0.9}
+\usepackage[colorlinks=true, urlcolor=hyperlink]{hyperref}
+
+\usepackage{enumitem}
+\setitemize{noitemsep,topsep=0in}
+
+\newenvironment{justifycolumns}
+{\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} lr@{}}}
+{\end{tabular*}}
+
+\newcommand{\row}[2]{#1 & #2 \\}
+
+\newcommand{\blockseparation}{\vspace{0.13in}}
+\newcommand{\p}{\hspace{0.5in}} % indents are otherwise off
+
+\usepackage{svg}
+
+\begin{document}
+\begin{flushleft}
+
+\begin{justifycolumns}
+  \row{\textbf{Role Title}}{\raisebox{-0.08in}{\includesvg[height=0.3in]{./graphics/logo.svg}}}
+\end{justifycolumns}
+
+\blockseparation
+\hrule
+
+\setlength{\parskip}{8pt}
+\vspace{0.25in}
+
+\p .
+
+\p .
+
+\p .
+
+\vspace{0.35in}
+\setlength{\parskip}{0pt}
+
+Best regards,
+
+Alex McNamara
+
+\href{mailto:alex.mcnamara@gmail.com}{Email} / 
+\href{tel:15107387344}{Phone} / 
+\href{https://github.com/amcnamara/}{GitHub} / 
+\href{https://github.com/amcnamara/amcnamara/blob/main/artifacts/amcnamara_cv.pdf?raw=true}{CV}
+
+\end{flushleft}
+\end{document}
