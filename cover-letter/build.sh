@@ -11,6 +11,13 @@ function run() {
         brew install moreutils
     fi
 
+    # Shouldn't be necessary to manually convert vector graphics
+    #local vectors=$(find ./graphics/*.svg)
+    #echo $vectors | while read -r vector _; do
+    #    echo "converting: $vector to PDF"
+    #    inkscape $vector --export-type=pdf --export-latex
+    #done
+
     local files=$(find ./*.tex)
 
     echo $files | while read -r file _; do
